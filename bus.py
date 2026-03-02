@@ -2,9 +2,9 @@ tareas = []
 
 while True:
     print("\n--- MENÚ ---")
-    print("1. Agregar tarea")
-    print("2. Ver tareas")
-    print("3. Salir")
+    print("1. Add New Task")
+    print("2. See Task")
+    print("3. Exit")
 
     opcion = input("Elige una opción: ")
 
