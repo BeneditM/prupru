@@ -30,12 +30,33 @@ while True:
 
 
 numeros = [ 10, 5, 7, 2, 1 ]
-print(f'lista original : {numeros}')
+print(f'\nlista original : {numeros}')
 
 numeros[0] =111
-print(f' \n lista actualizada = {numeros}')
+print(f' \nlista actualizada = {numeros}')
 
 numeros[1] = numeros[4]
-print(f' \n lista nueva es : {numeros}')
+print(f' \nlista nueva es : {numeros}')
 
-print(f' \n la longitud de la lista es : {len(numeros)}')
+print(f' \nla longitud de la lista es : {len(numeros)}')
+
+
+beatles = []
+print(f' \npaso 1 : {beatles}')
+
+beatles.append('john lennon')
+beatles.append('paul Mc Cartny')
+beatles.append('George Harrison')
+
+print(f'\npaso 2 : {beatles}')
+for miembros in range(2) : beatles.append(input("\nNuevos Miembros de la Banda es :"))
+
+print(f'\npaso 3 {beatles}')
+del beatles[-1]
+del beatles[-1]
+print(f"\npaso 4 : {beatles}")
+
+beatles.insert(0, 'Ringo Starr')
+print(f' \nEl grupo finalmente es : {beatles}')
+print(f'\nLa cantidad de miembros en el grupo son : {len(beatles)}')
+
