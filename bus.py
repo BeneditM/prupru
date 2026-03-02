@@ -27,3 +27,9 @@ while True:
 
     else:
         print("❌ Opción inválida. Intenta de nuevo.")
+
+
+lista = [ 1, 2, 3, 4, 5, 9, 89 ]
+
+lista.append(4)
+print(f'\n la longitud actualizada es : {len(lista)}')
