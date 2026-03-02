@@ -29,7 +29,13 @@ while True:
         print("❌ Opción inválida. Intenta de nuevo.")
 
 
-lista = [ 1, 2, 3, 4, 5, 9, 89 ]
+numeros = [ 10, 5, 7, 2, 1 ]
+print(f'lista original : {numeros}')
 
-lista.append(4)
-print(f'\n la longitud actualizada es : {len(lista)}')
+numeros[0] =111
+print(f' \n lista actualizada = {numeros}')
+
+numero[1] = numeros[4]
+print(f' \n lista nueva es : {numeros}')
+
+print(f' \n la longitud de la lista es : {len(numeros)}')
