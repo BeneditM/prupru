@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Viajes</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        img { max-width: 100%; height: auto; }
+        .seccion { margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+<h1>🌍 Blog de Viajes</h1>
+
+<!-- 1. Uso de <img> -->
+<div class="seccion">
+    <h2>Paisaje de Montaña</h2>
+    <img src="/imagen/nueva vaina/imagenes/cascada.png" alt="Cascada en la montaña" width="400" height="300">
+</div>
+
+<!-- 2. Formatos de imagen -->
+<div class="seccion">
+    <h2>Formatos de Imagen</h2>
+
+    <h3>JPEG</h3>
+    <img src="/imagen/nueva vaina/imagenes/Diseño sin título.jpg" width="700" height="300" alt="Imagen JPEG">
+    <p>Usado para fotos con muchos colores (paisajes).</p>
+
+    <h3>PNG</h3>
+    <img src="/imagen/nueva vaina/imagenes/pinos.png" width="400" height="200" alt="Imagen PNG">
+    <p>Ideal para logos o imágenes con fondo transparente.</p>
+
+    <h3>GIF</h3>
+    <img src="/imagen/nueva vaina/imagenes/fondo.gif" width="700" height="200" alt="Imagen GIF">
+    <p>Se usa para animaciones simples.</p>
+</div>
+
+<!-- 3. Rutas relativas y absolutas -->
+<div class="seccion">
+    <h2>Ubicación de Imágenes</h2>
+
+    <h3>Ruta relativa</h3>
+    <img src="https://media1.tenor.com/m/u9Q1p9IFSiwAAAAC/w%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0-gundam-wing.gif" alt="Ruta relativa">
+
+    <h3>Ruta absoluta</h3>
+    <img src="https://media1.tenor.com/m/tMSgIJy6GRoAAAAC/heavyarms-gundam.gif" alt="Ruta absoluta">
+</div>
+
+<!-- 4. Imagen responsiva -->
+<div class="seccion">
+    <h2>Imagen Responsiva</h2>
+    <img 
+        src="/imagen/nueva vaina/imagenes/image_1200.jpg" width="400" height="300"
+        srcset="/imagen/nueva vaina/imagenes/image_1200.jpg 480w,
+                /imagen/nueva vaina/imagenes/image_1200.jpg 800w,
+                /imagen/nueva vaina/imagenes/image_1200.jpg 1200w"
+        sizes="(max-width: 600px) 480px,
+               (max-width: 900px) 800px,
+               1200px"
+        alt="Imagen responsiva">
+</div>
+
+</body>
+</html>
