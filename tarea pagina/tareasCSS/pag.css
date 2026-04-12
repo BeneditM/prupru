@@ -1,25 +1,71 @@
-h1, h2 {
-    color: red;
-}
-
-.especial {
-    color: greenyellow;
-}
-#unique {
-    color: blueviolet;
-}
-.parent {
+/*Base de los styles */
+body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-
+    font-size: 14px;
 }
 
+/* header styles */
+
+header {
+    background-color: darkolivegreen;
+    padding: 20px;
+    text-align: center;
+}
+/* Section styles */
+section {
+    margin: 20px;
+}
+
+/* Element footer styles*/
+footer {
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Element Selector */
+h2 {
+    color: black;
+}
+
+/* Class selector */
+.highlight {
+    background-color: orange;
+    color: aliceblue;
+    padding: 4px;
+}
+
+/* ID selector */
+#header {
+    border-bottom: 2px solid orange;
+}
+
+/* Attribute selector */
+a[href^="mailto"] {
+    color: orange;
+}
+
+/* pseudo-class selector */
+
+a:hover {
+    color: whitesmoke;
+}
+
+/* pseudo-element selector */
+p::first-line {
+    font-weight: bold;
+}
+
+/* combinator selector */
+header + main {
+    border-top: 1px solid gray;
+}
+
+/* Inline styles (highest specificity) */
+h1 {
+    color: blueviolet !important;
+}
+/* external styles */
 p {
-    font-size: 20px;
-    color: purple ;
-
-}
-
-.inportante {
-    color: blue !important;
+    color: red !important;
 }

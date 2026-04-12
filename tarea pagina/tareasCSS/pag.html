@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="Es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entendiendo la cascada, especificidad y herencia en css</title>
-<link rel="stylesheet" href="pag.css">
+    <title>My personal Blog</title>
+    <link rel="stylesheet" href="pag.css">
+    <style>
+        p {
+            color: bisque;
+            font-size: 16px;
+        }
+    </style>
+
 </head>
-
 <body>
-  <h1 style="color: blue;">Entendiendo la cascada en css</h1>
-  <p>Este es un parrafo.</p>
-  <p class="especial">Este es un parrafo especial</p>
-  <p id="unique">Este es un parrafo unico</p>
-  
-  <div id="parent">
-    <p>Este es un parrafo hijo</p>
-    <p>Este es otro parrafo hijo</p>
-  </div>
-  <h2>Un encabezado antes de un parrafo importante</h2>
-  <p class="inportante">Este es un parrafo inportante</p>  
-
-
+    <header id="header">
+        <h1 style="color: blue; font-size: 24px">Welcome to My Blog</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi, yo estoy desarrollando skill sobre CSS y me dibierto realizando estas activities</p>
+        </section>
+        <section>
+            <h2>My Interests</h2>
+            <p>Me gusta obtener nuevos conocimientos cada día para ser más atractivo en el ámbito laboral para las empresas.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Concact: <a href="mailto">info@Blog.com</a></p>
+    </footer>
 </body>
 </html>
