@@ -42,13 +42,13 @@ li {
 }
 
 section {
-    background-color: brown;
+    background-color: rgb(52, 189, 167);
     margin-top: 10px;
     padding: 5px;
 }
 
 article {
-    background-color: black;
+    background-color: rgb(199, 152, 152);
     margin-top: 5px;
     padding: 10px 15px;
 
@@ -72,5 +72,5 @@ footer {
     background-color: darkblue;
     color: aliceblue;
     padding: 10px 20px;
-    
+
 }
