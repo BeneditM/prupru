@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gundam Wing website</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+/* Video */
+header video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay oscuro */
+header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Contenido */
+.header-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: left;
+  padding: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-content h1 {
+  font-size: 3rem;
+}
+
+.header-content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Botón flotante */
+.sound-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+  background: rgba(0,0,0,0.6);
+  border: 2px solid white;
+  color: white;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sound-btn:hover {
+  background: white;
+  color: black;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="/tarea pagina/tarealink/multimedia/gundamopening.mp4" type="video/mp4">
+  </video>
+
+  <div class="header-content">
+    <h1>Gundam Wing FansBlog</h1>
+    <p>Explora Japanese Original Mecha Anime</p>
+    <p>日本のオリジナルメカアニメを探求しよう</p>
+  </div>
+
+  <!-- Botón de sonido -->
+  <button class="sound-btn" onclick="toggleSound()" id="soundBtn">
+    🔇
+  </button>
+</header>
+
+<script>
+function toggleSound() {
+  const video = document.getElementById("bgVideo");
+  const btn = document.getElementById("soundBtn");
+
+  if (video.muted) {
+    video.muted = false;
+    btn.textContent = "🔊";
+  } else {
+    video.muted = true;
+    btn.textContent = "🔇";
+  }
+}
+</script>
+
+</body>
+</html>
