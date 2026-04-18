@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0%;
+}
+
+header {
+    background: url('/tarea pagina/websiteproductos/multimedia/centenario.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+footer {
+    background-color: lightgrey;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+.product {
+    width: 300%;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 15px #000;
+    overflow: hidden;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: spx;
+    border-radius: spx;
+}
+.product-specs {
+width: 100%;
+border-collapse: collapse;
+
+}
+.product-specs th, .product-specs td {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.product-specs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.product-specs tr:hover {
+    background-color: #ddd;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
