@@ -1,0 +1,31 @@
+
+body {
+    background-image: url(multimedia/fondogw30.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+ }
+
+
+.gallery {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    width: 10%;
+    height: 400%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: all ease-in-out 0.5s;
+}
+
+.gallery img:hover {
+    width: 40%;
+}
