@@ -19,7 +19,7 @@ body {
 
 .gallery img {
     width: 10%;
-    height: 400%;
+    height: 600px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid black;
