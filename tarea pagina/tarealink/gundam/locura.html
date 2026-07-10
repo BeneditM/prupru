@@ -68,13 +68,18 @@
     </video>
     <button onclick="activarAudio()">Activar sonido</button>
 
-    <script> /* El SCRIPT es opcional porque no lo necesito realmente para nada */
-        function activarAudio() {
-          const video = document.getElementById("bgVideo");
+    
+    <script> /* realmete este SCRIPT no funciono porque los buscadores por ley no lompermiten */
+      const video = document.getElementById("bgVideo");
+      const button = document.getElementById("soundBtn");
+      
+      button.addEventListener("click", () => {
           video.muted = false;
-          video.play();
-        }
-        </script>
+          video.volume = 1;
+          button.style.display = "none";
+      });
+      </script>
+
 
     <div class="header-content">
       <h1>Gundam Wing FansBlog</h1>
